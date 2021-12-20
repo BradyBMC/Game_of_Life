@@ -7,10 +7,8 @@ void drawGrid(sf::RenderWindow&, int rows, int cols);
 
 int main() {
   cout << "This took way too much work lol" << endl;
-  sf::RenderWindow window(sf::VideoMode(200,200), "SFML works!");
-  sf::CircleShape shape(100.f);
-  shape.setFillColor(sf::Color::Green);
-  drawGrid(window,5,5);
+  sf::RenderWindow window(sf::VideoMode(1000,1000), "SFML works!");
+  drawGrid(window,100,100);
   window.display();
   while(window.isOpen()) { 
     sf::Event event;
