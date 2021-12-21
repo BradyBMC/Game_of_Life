@@ -9,6 +9,7 @@ class graph {
     public:
         graph(int,int);
         void play();
+        ~graph();
 
 };
 

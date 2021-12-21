@@ -1,4 +1,8 @@
-#include <cell.hpp>
+#include "cell.hpp"
+
+cell :: cell() {
+    
+}
 
 cell :: cell (int x, int y,bool alive) {
     coord = {x,y};

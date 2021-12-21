@@ -1,4 +1,4 @@
-#include <graph.hpp>
+#include "graph.hpp"
 
 graph :: graph(int x,int y) {
     dimension.first = x, dimension.second = y;
@@ -11,4 +11,8 @@ graph :: graph(int x,int y) {
 
 void graph :: play() {
     
+}
+
+graph :: ~graph() {
+    delete []g;
 }
