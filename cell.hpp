@@ -13,6 +13,7 @@ class cell {
         cell(int,int,bool);
         bool isAlive();
         void kill();
+        void born();
 };
 
 #endif

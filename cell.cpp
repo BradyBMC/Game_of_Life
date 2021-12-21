@@ -1,7 +1,7 @@
 #include "cell.hpp"
 
 cell :: cell() {
-    
+
 }
 
 cell :: cell (int x, int y,bool alive) {
@@ -15,4 +15,8 @@ bool cell :: isAlive() {
 
 void cell :: kill() {
     alive = false;
+}
+
+void cell :: born() {
+    alive = true;
 }

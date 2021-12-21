@@ -9,8 +9,10 @@ class graph {
     public:
         graph(int,int);
         void play();
+        cell** cpy();
+        bool detect(int,int);
+        bool bordercheck(int,int);
         ~graph();
-
 };
 
 #endif
