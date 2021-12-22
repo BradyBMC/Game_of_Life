@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <unistd.h>
 #include "graph.hpp"
 
 using namespace std;
@@ -7,10 +8,8 @@ using namespace std;
 void drawGrid(sf::RenderWindow&, int rows, int cols);
 
 int main() {
-  cout << "This took way too much work lol" << endl;
-  sf::RenderWindow window(sf::VideoMode(1000,1000), "SFML works!");
-  //drawGrid(window,100,100);
-  window.display();
+  sf::RenderWindow window(sf::VideoMode(600,800), "SFML works!");
+  drawGrid(window,100,100);
   sf::RectangleShape rect(sf::Vector2f(120,50));
   rect.setSize(sf::Vector2f(100,100));
   window.draw(rect);
@@ -21,6 +20,8 @@ int main() {
 	      window.close();
       }
     }
+    window.display();
+    sleep(1);
   }
   return 0;
 }
