@@ -26,6 +26,7 @@ int main() {
   return 0;
 }
 
+
 void drawGrid(sf::RenderWindow& window, int rows, int cols) {
   int numLines = rows+cols-2;
     sf::VertexArray grid(sf::Lines, 2*(numLines));
@@ -50,3 +51,4 @@ void drawGrid(sf::RenderWindow& window, int rows, int cols) {
     // draw it
     window.draw(grid);
 }
+

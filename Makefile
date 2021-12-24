@@ -3,7 +3,7 @@ all: compile link
 compile:
 	g++ -I src/include -c main.cpp cell.cpp graph.cpp
 link:
-	g++ main.o cell.o graph.o -o main -L src/lib -l sfml-graphics -l sfml-window -l sfml-system
+	g++ main.o cell.o graph.o -o main -lsfml-graphics -lsfml-window -lsfml-system
 clean:
-	del *.o
-	del main.exe
+	rm *.o
+	rm main
